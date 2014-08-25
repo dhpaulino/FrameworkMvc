@@ -7,6 +7,11 @@
             "email": "dhpaulino@gmail.com"
         }
     ],
+    "autoload" : {
+      "psr-0" : {
+          "FrameworkMvc" : "library"
+      }  
+    },
     "require": {
         "php": ">=5.3.0"
     }
