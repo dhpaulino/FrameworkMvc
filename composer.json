@@ -1,0 +1,13 @@
+{
+    "name": "FrameworkMVC",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Davisson Henrique Paulino",
+            "email": "dhpaulino@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
