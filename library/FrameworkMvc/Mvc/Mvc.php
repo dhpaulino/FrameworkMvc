@@ -38,14 +38,15 @@ class Mvc {
             $moduleName = ucfirst($_GET['module']);
 
             $controllerName = ucfirst($_GET['controller']);
-            $controllerFullName = $moduleName . DIRECTORY_SEPARATOR
-                    . 'Controller' . DIRECTORY_SEPARATOR
+            $controllerFullName = $moduleName . '\\'
+                    . 'Controller' . '\\'
                     . $controllerName . 'Controller';
 
 
             $actionName = strtolower($_GET['action']);
             $actionMethodName = $actionName . 'Action';
 
+       
 
             if (class_exists($controllerFullName)) {
 
@@ -70,7 +71,7 @@ class Mvc {
                     throw new \Exception("Action  {$actionName} not found into {$controllerFullName}");
                 }
             } else {
-
+                
                 throw new \Exception("Controller {$controllerFullName} not found");
             }
         } else {
